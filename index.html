@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas Hexagonian</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.4/html2pdf.bundle.js"></script>
+    <script src="/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Ventas Hexagonian</h1>
+        <p>Cliente: <span id="cliente" contenteditable="true">Escribe el nombre del cliente</span></p>
+        <p>Tel: 79258547</p>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Cantidad</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Acciones</th> <!-- Agregado para el botón "Eliminar" -->
+            </tr>
+        </thead>
+        <tbody id="factura">
+            <!-- Aquí se agregarán las filas de la factura -->
+        </tbody>
+    </table>
+    <p id="total">Total: Q 0.00</p>
+    
+    <button id="agregarItem">Agregar Item</button>
+    <button id="imprimirBtn">Imprimir Factura</button>
+</body>
+</html>
